@@ -1,0 +1,76 @@
+### 1. Write a Python Program to Check if a Number is Positive, Negative or Zero?
+
+num= float(input("Enter a number: "))
+if num==0 :
+    print("Number is zero")
+if num>0 :
+    print("Number is Positive")
+if num<0 :
+    print("Number is negative")
+    
+    
+    
+    ### 2. Write a Python Program to Check if a Number is Odd or Even?
+
+num=int(input("Enter a number: "))
+
+if num%2 == 0 :
+    print("Number is Even")
+else :
+    print("Number is odd")
+    
+    
+    
+    ### 3. Write a Python Program to Check Leap Year?
+year=int(input("Enter Year: "))
+
+if (year % 400 == 0) and (year % 100 == 0) :
+ print(year, "is a leap year")
+elif (year % 4 == 0)  and (year % 100 != 0) :
+ print(year,"is a leap year")
+else :
+ print(year , "is not a leap year")
+
+
+
+### 4. Write a Python Program to Check Prime Number?
+
+num= int(input("Enter a number: "))
+
+if num>1 :
+    for i in range(2, (int(num / 2) + 1)):
+        if (num % i) == 0:
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is  a prime number")
+else:
+    print(num,"is not a prime number")
+    
+    
+    
+    
+    ### 5. Write a Python Program to Print all Prime Numbers in an Interval of 1-10000?
+
+
+lower=1
+upper=10000
+
+for num in range (lower,upper+1) :
+    if num>1 :
+        for i in range (2,num) :
+            if num % i == 0 :
+                break;
+        else:
+            print(num)
+
+
+'''lower_value = int(input("Enter lowest number: "))
+upper_value = int(input("Enter highest number: "))
+for num in range (lower_value ,upper_value+1):
+    if num>1 :
+        for i in range (2,num):
+            if num % i == 0 :
+                break
+        else :
+            print(num) '''
